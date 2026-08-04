@@ -1,3 +1,84 @@
+@font-face {
+    font-family: 'robotothin';
+    src: url('roboto-thin-webfont.woff2') format('woff2'),
+         url('roboto-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
+    font-family: 'robotothin', 'Courier New', Courier, monospace;
     box-sizing: border-box;
+    text-align: center;
+}
+
+form {
+    font-weight: 800;
+    font-size: 1.15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid  black;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+button {
+    background-color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    border-color: rgb(92, 92, 92);
+    background-color: rgb(92, 92, 92);
+    color: white;
+}
+
+.error {
+    font-weight: bold;
+    color: red;
+    border-radius: 0 0 5px 5px;
+
+    box-sizing: border-box;
+}
+
+#weather-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#weather-container > p {
+    margin: 0;
+}
+
+#city-header, #conditions {
+    font-size: 2.2rem;
+}
+
+#temp-container {
+    align-self: center;
+    background: rgb(92, 92, 92);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#temp {
+    color: white;
+    font-size: 5rem;
+    margin: 0px;
+}
+
+#high-low {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
